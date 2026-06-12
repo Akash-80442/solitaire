@@ -33,11 +33,11 @@ export const MiniCard: React.FC<{ suit: Suit; rank: number }> = ({ suit, rank })
 
 const styles = StyleSheet.create({
   container: { marginBottom: 24 },
-  header: { flexDirection: 'row', alignItems: 'center', marginBottom: 8, gap: 10 },
-  numBadge: { width: 24, height: 24, borderRadius: 12, backgroundColor: '#0F172A', justifyContent: 'center', alignItems: 'center' },
+  header: { flexDirection: 'row', alignItems: 'center', marginBottom: 12, gap: 10 },
+  numBadge: { width: 24, height: 24, borderRadius: 12, backgroundColor: '#38BDF8', justifyContent: 'center', alignItems: 'center', shadowColor: '#38BDF8', shadowOpacity: 0.4, shadowRadius: 4, elevation: 4 },
   iconContainer: { justifyContent: 'center', alignItems: 'center' },
-  num: { color: '#F8FAFC', fontSize: 12, fontWeight: '900' },
-  title: { color: '#0F172A', fontSize: 16, fontWeight: '800' },
+  num: { color: '#0F172A', fontSize: 13, fontWeight: '900' },
+  title: { color: '#F8FAFC', fontSize: 18, fontWeight: '800', letterSpacing: 0.5 },
 });
 
 const miniStyles = StyleSheet.create({

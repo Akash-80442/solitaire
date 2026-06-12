@@ -1,0 +1,25 @@
+diff --git a/node_modules/react-native-sound/RNSound.podspec b/node_modules/react-native-sound/RNSound.podspec
+index 1432387..493562c 100644
+--- a/node_modules/react-native-sound/RNSound.podspec
++++ b/node_modules/react-native-sound/RNSound.podspec
+@@ -16,6 +16,7 @@ Pod::Spec.new do |s|
+ 
+   s.source       = { :git => "https://github.com/zmxv/react-native-sound.git" }
+   s.source_files = "ios/**/*.{h,m,mm,cpp}"
++  s.framework = "AVFoundation"
+ 
+   # Use install_modules_dependencies helper to install the dependencies if React Native version >=0.71.0.
+   # See https://github.com/facebook/react-native/blob/febf6b7f33fdb4904669f99d795eba4c0f95d7bf/scripts/cocoapods/new_architecture.rb#L79.
+diff --git a/node_modules/react-native-sound/ios/RNSound.mm b/node_modules/react-native-sound/ios/RNSound.mm
+index 94b2335..b311101 100644
+--- a/node_modules/react-native-sound/ios/RNSound.mm
++++ b/node_modules/react-native-sound/ios/RNSound.mm
+@@ -177,7 +177,7 @@ - (NSString *)categoryForName:(NSString *)categoryName {
+ 
+ #pragma mark - Audio Control Methods
+ 
+-RCT_EXPORT_METHOD(prepare:(NSString *)fileName key:(double)key options:(JS::NativeSoundIOS::SoundOptionTypes &)options callback:(RCTResponseSenderBlock)callback ) {
++RCT_EXPORT_METHOD(prepare:(NSString *)fileName key:(double)key options:(NSDictionary *)options callback:(RCTResponseSenderBlock)callback ) {
+     NSError *error;
+     NSURL *fileNameUrl;
+     AVAudioPlayer *player;

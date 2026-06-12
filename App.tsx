@@ -1,131 +1,85 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+import React, { useState } from 'react';
+import { HomeScreen, GameType } from './src/screens/HomeScreen';
+import { KlondikeGame } from './src/screens/KlondikeGame';
+import { MultiplayerLobby } from './src/screens/MultiplayerLobby';
+import { MultiplayerGame } from './src/screens/MultiplayerGame';
+import { SevenEightGame } from './src/screens/SevenEightGame';
+import { FiveThreeTwoGame } from './src/screens/FiveThreeTwoGame';
 
-import React from 'react';
-import type {PropsWithChildren} from 'react';
-import {
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+const App = () => {
+  const [activeGame, setActiveGame] = useState<GameType | 'home' | 'multiplayer-game' | 'seven-eight-game' | 'five-three-two-game' | 'seven-eight-lobby' | 'five-three-two-lobby'>('home');
+  const [multiplayerConfig, setMultiplayerConfig] = useState<{ seed: string, opponentName: string, isHost: boolean, players: string[], myPlayerName: string, gameMode?: string } | null>(null);
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+  if (activeGame === 'home') {
+    return <HomeScreen onSelectGame={setActiveGame} />;
+  }
 
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
+  if (activeGame === 'klondike') {
+    return <KlondikeGame onGoBack={() => setActiveGame('home')} />;
+  }
 
-function Section({children, title}: SectionProps): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-}
+  if (activeGame === 'multiplayer-lobby' || activeGame === 'seven-eight-lobby' || activeGame === 'five-three-two-lobby') {
+    let gameNameDisplay = 'Showdown';
+    if (activeGame === 'seven-eight-lobby') gameNameDisplay = '7-8 (Saat-Aath)';
+    if (activeGame === 'five-three-two-lobby') gameNameDisplay = '5-3-2 (Teen Do Paanch)';
 
-function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  /*
-   * To keep the template simple and small we're adding padding to prevent view
-   * from rendering under the System UI.
-   * For bigger apps the recommendation is to use `react-native-safe-area-context`:
-   * https://github.com/AppAndFlow/react-native-safe-area-context
-   *
-   * You can read more about it here:
-   * https://github.com/react-native-community/discussions-and-proposals/discussions/827
-   */
-  const safePadding = '5%';
-
-  return (
-    <View style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
+    return (
+      <MultiplayerLobby
+        gameName={gameNameDisplay}
+        onGoBack={() => setActiveGame('home')}
+        onGameStart={(seed, opponentName, isHost, players, myPlayerName) => {
+          setMultiplayerConfig({ seed, opponentName, isHost, players, myPlayerName, gameMode: activeGame });
+          if (activeGame === 'seven-eight-lobby') setActiveGame('seven-eight-game');
+          else if (activeGame === 'five-three-two-lobby') setActiveGame('five-three-two-game');
+          else setActiveGame('multiplayer-game');
+        }}
       />
-      <ScrollView
-        style={backgroundStyle}>
-        <View style={{paddingRight: safePadding}}>
-          <Header/>
-        </View>
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-            paddingHorizontal: safePadding,
-            paddingBottom: safePadding,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
-    </View>
-  );
-}
+    );
+  }
 
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
+  if (activeGame === 'multiplayer-game' && multiplayerConfig) {
+    return (
+      <MultiplayerGame
+        onGoBack={() => {
+          setMultiplayerConfig(null);
+          setActiveGame('home');
+        }}
+        seed={multiplayerConfig.seed}
+        opponentName={multiplayerConfig.opponentName}
+        isHost={multiplayerConfig.isHost}
+      />
+    );
+  }
+
+  if (activeGame === 'seven-eight-game' && multiplayerConfig) {
+    return (
+      <SevenEightGame
+        onGoBack={() => {
+          setMultiplayerConfig(null);
+          setActiveGame('home');
+        }}
+        seed={multiplayerConfig.seed}
+        opponentName={multiplayerConfig.opponentName}
+        isHost={multiplayerConfig.isHost}
+      />
+    );
+  }
+
+  if (activeGame === 'five-three-two-game' && multiplayerConfig) {
+    return (
+      <FiveThreeTwoGame
+        onGoBack={() => {
+          setMultiplayerConfig(null);
+          setActiveGame('home');
+        }}
+        seed={multiplayerConfig.seed}
+        players={multiplayerConfig.players}
+        myPlayerName={multiplayerConfig.myPlayerName}
+      />
+    );
+  }
+
+  return null;
+};
 
 export default App;

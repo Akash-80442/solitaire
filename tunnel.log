@@ -1,0 +1,5 @@
+npm error code UNABLE_TO_VERIFY_LEAF_SIGNATURE
+npm error errno UNABLE_TO_VERIFY_LEAF_SIGNATURE
+npm error request to https://registry.npmjs.org/localtunnel failed, reason: unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca
+npm error A complete log oConnection to serveo.net closed by remote host.
+npm/_logs/2026-06-12T06_03_51_219Z-debug-0.log

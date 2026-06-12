@@ -1,0 +1,716 @@
+yarn run v1.22.22
+$ react-native start --reset-cache
+
+Welcome to React Native v0.79
+Starting dev server on http://localhost:8081
+
+
+                        ▒▒▓▓▓▓▒▒
+                     ▒▓▓▓▒▒░░▒▒▓▓▓▒
+                  ▒▓▓▓▓░░░▒▒▒▒░░░▓▓▓▓▒
+                 ▓▓▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▓▓
+                 ▓▓░░░░░▒▓▓▓▓▓▓▒░░░░░▓▓
+                 ▓▓░░▓▓▒░░░▒▒░░░▒▓▒░░▓▓
+                 ▓▓░░▓▓▓▓▓▒▒▒▒▓▓▓▓▒░░▓▓
+                 ▓▓░░▓▓▓▓▓▓▓▓▓▓▓▓▓▒░░▓▓
+                 ▓▓▒░░▒▒▓▓▓▓▓▓▓▓▒░░░▒▓▓
+                  ▒▓▓▓▒░░░▒▓▓▒░░░▒▓▓▓▒
+                     ▒▓▓▓▒░░░░▒▓▓▓▒
+                        ▒▒▓▓▓▓▒▒
+
+
+ WARN  the transform cache was reset.
+                Welcome to Metro v0.82.5
+              Fast - Scalable - Integrated
+
+
+ INFO  Dev server ready. Press Ctrl+C to exit.
+ INFO  Interactive mode is not supported in this environment
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░ 99.9% (619/619)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  
+[7m [1m💡 JavaScript logs have moved![22m They can now be viewed in React Native DevTools. Tip: Type [1mj[22m in the terminal to open (requires Google Chrome or Microsoft Edge).[27m
+
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ ERROR  Error: Unable to resolve module ../assets/sounds/success.wav from /Users/tanveerpatel/development/Myreactgame/MyApp/src/utils/audio.ts: 
+
+None of these files exist:
+  * success.wav
+  * src/assets/sounds/success.wav
+   6 | let errorLoaded = false;
+   7 |
+>  8 | const successSound = new Sound(require('../assets/sounds/success.wav'), (error) => {
+     |                                         ^
+   9 |   if (error) {
+  10 |     console.log('failed to load success sound', error);
+  11 |     return;
+    at ModuleResolver.resolveDependency (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/node-haste/DependencyGraph/ModuleResolution.js:114:15)
+    at DependencyGraph.resolveDependency (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/node-haste/DependencyGraph.js:239:43)
+    at /Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/lib/transformHelpers.js:161:21
+    at resolveDependencies (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/buildSubgraph.js:43:25)
+    at visit (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/buildSubgraph.js:81:30)
+    at async Promise.all (index 0)
+    at async buildSubgraph (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/buildSubgraph.js:105:3)
+    at async Graph._buildDelta (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/Graph.js:158:22)
+    at async Graph.traverseDependencies (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/Graph.js:50:19)
+    at async DeltaCalculator._getChangedDependencies (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/DeltaCalculator.js:187:42)
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ ERROR  Connection terminated with Device for app='com.myapp' on device='RMX3998 - 16 - API 36' with idle='true' after not responding for 60 seconds.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ ERROR  SyntaxError: /Users/tanveerpatel/development/Myreactgame/MyApp/src/hooks/useSolitaire.ts: Identifier 'soundEnabled' has already been declared. (436:9)
+
+  434 |   }, [selectedCardId, waste, foundations, tableaus, executeMove, handleError]);
+  435 |
+> 436 |   const [soundEnabled, setSoundEnabled] = useState(true);
+      |          ^
+  437 |   const [vibrationEnabled, setVibrationEnabled] = useState(true);
+  438 |   const [cardStyle, setCardStyle] = useState<'classic' | 'modern'>('modern');
+  439 |
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ ERROR  Connection terminated with Device for app='com.myapp' on device='RMX3998 - 16 - API 36' with idle='true' after not responding for 60 seconds.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ ERROR  SyntaxError: /Users/tanveerpatel/development/Myreactgame/MyApp/App.tsx: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (236:6)
+
+  234 |
+  235 |         </View>
+> 236 |       </View>
+      |       ^
+  237 |
+  238 |       {/* Floating Bottom Action Bar */}
+  239 |       <View style={styles.bottomBar}>
+ ERROR  SyntaxError: /Users/tanveerpatel/development/Myreactgame/MyApp/App.tsx: Unexpected token, expected "," (233:16)
+
+  231 |                     <CardView card={c} cardStyle={cardStyle} />
+  232 |                   </View>
+> 233 |                 {faceUpCards.length > 0 && (
+      |                 ^
+  234 |                   <DraggableTail cards={colCards} index={faceDownCards.length} colIndex={colIndex} onDrop={handleDrop} onLocationTap={handleLocationTap} onError={handleError} hintedCardIds={hintedCardIds} selectedCardId={selectedCardId} cardStyle={cardStyle} />
+  235 |                 )}
+  236 |               </View>
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ ERROR  Error: Unable to resolve module ./src/screens/MultiplayerGame from /Users/tanveerpatel/development/Myreactgame/MyApp/App.tsx: 
+
+None of these files exist:
+  * src/screens/MultiplayerGame(.android.js|.native.js|.js|.android.jsx|.native.jsx|.jsx|.android.json|.native.json|.json|.android.ts|.native.ts|.ts|.android.tsx|.native.tsx|.tsx)
+  * src/screens/MultiplayerGame
+  3 | import { KlondikeGame } from './src/screens/KlondikeGame';
+  4 | import { MultiplayerLobby } from './src/screens/MultiplayerLobby';
+> 5 | import { MultiplayerGame } from './src/screens/MultiplayerGame';
+    |                                  ^
+  6 |
+  7 | const App = () => {
+  8 |   const [activeGame, setActiveGame] = useState<GameType | 'home' | 'multiplayer-game'>('home');
+    at ModuleResolver.resolveDependency (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/node-haste/DependencyGraph/ModuleResolution.js:114:15)
+    at DependencyGraph.resolveDependency (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/node-haste/DependencyGraph.js:239:43)
+    at /Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/lib/transformHelpers.js:161:21
+    at resolveDependencies (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/buildSubgraph.js:43:25)
+    at visit (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/buildSubgraph.js:81:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Promise.all (index 0)
+    at async buildSubgraph (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/buildSubgraph.js:105:3)
+    at async Graph._buildDelta (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/Graph.js:158:22)
+    at async Graph.traverseDependencies (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/Graph.js:50:19)
+ ERROR  Error: Unable to resolve module ./src/screens/MultiplayerGame from /Users/tanveerpatel/development/Myreactgame/MyApp/App.tsx: 
+
+None of these files exist:
+  * src/screens/MultiplayerGame(.android.js|.native.js|.js|.android.jsx|.native.jsx|.jsx|.android.json|.native.json|.json|.android.ts|.native.ts|.ts|.android.tsx|.native.tsx|.tsx)
+  * src/screens/MultiplayerGame
+  3 | import { KlondikeGame } from './src/screens/KlondikeGame';
+  4 | import { MultiplayerLobby } from './src/screens/MultiplayerLobby';
+> 5 | import { MultiplayerGame } from './src/screens/MultiplayerGame';
+    |                                  ^
+  6 |
+  7 | const App = () => {
+  8 |   const [activeGame, setActiveGame] = useState<GameType | 'home' | 'multiplayer-game'>('home');
+    at ModuleResolver.resolveDependency (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/node-haste/DependencyGraph/ModuleResolution.js:114:15)
+    at DependencyGraph.resolveDependency (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/node-haste/DependencyGraph.js:239:43)
+    at /Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/lib/transformHelpers.js:161:21
+    at resolveDependencies (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/buildSubgraph.js:43:25)
+    at visit (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/buildSubgraph.js:81:30)
+    at async Promise.all (index 0)
+    at async buildSubgraph (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/buildSubgraph.js:105:3)
+    at async Graph._buildDelta (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/Graph.js:158:22)
+    at async Graph.traverseDependencies (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/Graph.js:50:19)
+    at async DeltaCalculator._getChangedDependencies (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/DeltaCalculator.js:187:42)
+ ERROR  Error: Unable to resolve module ./src/screens/MultiplayerGame from /Users/tanveerpatel/development/Myreactgame/MyApp/App.tsx: 
+
+None of these files exist:
+  * src/screens/MultiplayerGame(.android.js|.native.js|.js|.android.jsx|.native.jsx|.jsx|.android.json|.native.json|.json|.android.ts|.native.ts|.ts|.android.tsx|.native.tsx|.tsx)
+  * src/screens/MultiplayerGame
+  3 | import { KlondikeGame } from './src/screens/KlondikeGame';
+  4 | import { MultiplayerLobby } from './src/screens/MultiplayerLobby';
+> 5 | import { MultiplayerGame } from './src/screens/MultiplayerGame';
+    |                                  ^
+  6 |
+  7 | const App = () => {
+  8 |   const [activeGame, setActiveGame] = useState<GameType | 'home' | 'multiplayer-game'>('home');
+    at ModuleResolver.resolveDependency (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/node-haste/DependencyGraph/ModuleResolution.js:114:15)
+    at DependencyGraph.resolveDependency (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/node-haste/DependencyGraph.js:239:43)
+    at /Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/lib/transformHelpers.js:161:21
+    at resolveDependencies (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/buildSubgraph.js:43:25)
+    at visit (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/buildSubgraph.js:81:30)
+    at async Promise.all (index 0)
+    at async buildSubgraph (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/buildSubgraph.js:105:3)
+    at async Graph._buildDelta (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/Graph.js:158:22)
+    at async Graph.traverseDependencies (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/Graph.js:50:19)
+    at async DeltaCalculator._getChangedDependencies (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/DeltaCalculator.js:187:42)
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ ERROR  SyntaxError: /Users/tanveerpatel/development/Myreactgame/MyApp/src/screens/MultiplayerGame.tsx: Missing initializer in destructuring declaration. (105:15)
+
+  103 |       socketManager.off('DISCONNECT', handleDisconnect);
+  104 |     };
+> 105 |   }, [onGoBack]);
+      |                ^
+  106 |
+  107 |   return (
+  108 |     <View style={styles.container}>
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ ERROR  Connection terminated with Device for app='com.myapp' on device='RMX1921 - 11 - API 30' with idle='true' after not responding for 60 seconds.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ ERROR  Connection terminated with Device for app='com.myapp' on device='RMX1921 - 11 - API 30' with idle='true' after not responding for 60 seconds.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ ERROR  SyntaxError: /Users/tanveerpatel/development/Myreactgame/MyApp/src/components/CardView.tsx: Unexpected token (197:2)
+
+  195 |   // Face-down back
+  196 |   back: {
+> 197 |   ...BASE_CARD,
+      |   ^
+  198 |   backgroundColor: '#1E3A8A',
+  199 |   borderColor: '#FFFFFF',
+  200 |   borderWidth: 2,
+ ERROR  SyntaxError: /Users/tanveerpatel/development/Myreactgame/MyApp/src/components/CardView.tsx: Unexpected token (197:2)
+
+  195 |   // Face-down back
+  196 |   back: {
+> 197 |   ...BASE_CARD,
+      |   ^
+  198 |   backgroundColor: '#1E3A8A',
+  199 |   borderColor: '#FFFFFF',
+  200 |   borderWidth: 2,
+ ERROR  SyntaxError: /Users/tanveerpatel/development/Myreactgame/MyApp/src/components/CardView.tsx: Unexpected token (233:0)
+
+  231 | });
+  232 |
+> 233 | });
+      | ^
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ ERROR  Connection terminated with Device for app='com.myapp' on device='RMX3998 - 16 - API 36' with idle='true' after not responding for 60 seconds.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ ERROR  Connection terminated with Device for app='com.myapp' on device='RMX3998 - 16 - API 36' with idle='true' after not responding for 60 seconds.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ ERROR  Error: Unable to resolve module ./AnimatedHandCard from /Users/tanveerpatel/development/Myreactgame/MyApp/src/screens/SevenEightGame.tsx: 
+
+None of these files exist:
+  * src/screens/AnimatedHandCard(.android.js|.native.js|.js|.android.jsx|.native.jsx|.jsx|.android.json|.native.json|.json|.android.ts|.native.ts|.ts|.android.tsx|.native.tsx|.tsx)
+  * src/screens/AnimatedHandCard
+   9 | import { Card, Suit } from '../types';
+  10 | import Icon from 'react-native-vector-icons/FontAwesome5';
+> 11 | import { AnimatedHandCard } from './AnimatedHandCard';
+     |                                   ^
+  12 |
+  13 | interface SevenEightGameProps {
+  14 |   onGoBack: () => void;
+    at ModuleResolver.resolveDependency (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/node-haste/DependencyGraph/ModuleResolution.js:114:15)
+    at DependencyGraph.resolveDependency (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/node-haste/DependencyGraph.js:239:43)
+    at /Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/lib/transformHelpers.js:161:21
+    at resolveDependencies (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/buildSubgraph.js:43:25)
+    at visit (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/buildSubgraph.js:81:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Promise.all (index 0)
+    at async buildSubgraph (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/buildSubgraph.js:105:3)
+    at async Graph._buildDelta (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/Graph.js:158:22)
+    at async Graph.traverseDependencies (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/Graph.js:50:19)
+ ERROR  Error: Unable to resolve module ./AnimatedHandCard from /Users/tanveerpatel/development/Myreactgame/MyApp/src/screens/SevenEightGame.tsx: 
+
+None of these files exist:
+  * src/screens/AnimatedHandCard(.android.js|.native.js|.js|.android.jsx|.native.jsx|.jsx|.android.json|.native.json|.json|.android.ts|.native.ts|.ts|.android.tsx|.native.tsx|.tsx)
+  * src/screens/AnimatedHandCard
+   9 | import { Card, Suit } from '../types';
+  10 | import Icon from 'react-native-vector-icons/FontAwesome5';
+> 11 | import { AnimatedHandCard } from './AnimatedHandCard';
+     |                                   ^
+  12 |
+  13 | interface SevenEightGameProps {
+  14 |   onGoBack: () => void;
+    at ModuleResolver.resolveDependency (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/node-haste/DependencyGraph/ModuleResolution.js:114:15)
+    at DependencyGraph.resolveDependency (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/node-haste/DependencyGraph.js:239:43)
+    at /Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/lib/transformHelpers.js:161:21
+    at resolveDependencies (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/buildSubgraph.js:43:25)
+    at visit (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/buildSubgraph.js:81:30)
+    at async Promise.all (index 0)
+    at async buildSubgraph (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/buildSubgraph.js:105:3)
+    at async Graph._buildDelta (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/Graph.js:158:22)
+    at async Graph.traverseDependencies (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/Graph.js:50:19)
+    at async DeltaCalculator._getChangedDependencies (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/DeltaCalculator.js:187:42)
+ ERROR  Error: Unable to resolve module ./AnimatedHandCard from /Users/tanveerpatel/development/Myreactgame/MyApp/src/screens/SevenEightGame.tsx: 
+
+None of these files exist:
+  * src/screens/AnimatedHandCard(.android.js|.native.js|.js|.android.jsx|.native.jsx|.jsx|.android.json|.native.json|.json|.android.ts|.native.ts|.ts|.android.tsx|.native.tsx|.tsx)
+  * src/screens/AnimatedHandCard
+   9 | import { Card, Suit } from '../types';
+  10 | import Icon from 'react-native-vector-icons/FontAwesome5';
+> 11 | import { AnimatedHandCard } from './AnimatedHandCard';
+     |                                   ^
+  12 |
+  13 | interface SevenEightGameProps {
+  14 |   onGoBack: () => void;
+    at ModuleResolver.resolveDependency (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/node-haste/DependencyGraph/ModuleResolution.js:114:15)
+    at DependencyGraph.resolveDependency (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/node-haste/DependencyGraph.js:239:43)
+    at /Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/lib/transformHelpers.js:161:21
+    at resolveDependencies (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/buildSubgraph.js:43:25)
+    at visit (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/buildSubgraph.js:81:30)
+    at async Promise.all (index 0)
+    at async buildSubgraph (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/buildSubgraph.js:105:3)
+    at async Graph._buildDelta (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/Graph.js:158:22)
+    at async Graph.traverseDependencies (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/Graph.js:50:19)
+    at async DeltaCalculator._getChangedDependencies (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro/src/DeltaBundler/DeltaCalculator.js:187:42)
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ ERROR  Connection terminated with Device for app='com.myapp' on device='RMX3998 - 16 - API 36' with idle='true' after not responding for 60 seconds.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ ERROR  SyntaxError: /Users/tanveerpatel/development/Myreactgame/MyApp/src/screens/KlondikeGame.tsx: Identifier 'DraggableStack' has already been declared. (23:9)
+
+  21 | import { ScoreDashboard } from '../components/ui/ScoreDashboard';
+  22 | import { TopHeader } from '../components/ui/TopHeader';
+> 23 | import { DraggableStack, DraggableTail } from '../components/DraggableStack';
+     |          ^
+  24 | import { useSolitaire } from '../hooks/useSolitaire';
+  25 | import { cardWidth, cardHeight } from '../constants/layout';
+  26 | import { Difficulty } from '../types';
+ ERROR  SyntaxError: /Users/tanveerpatel/development/Myreactgame/MyApp/src/screens/KlondikeGame.tsx: Identifier 'DraggableStack' has already been declared. (23:9)
+
+  21 | import { ScoreDashboard } from '../components/ui/ScoreDashboard';
+  22 | import { TopHeader } from '../components/ui/TopHeader';
+> 23 | import { DraggableStack, DraggableTail } from '../components/DraggableStack';
+     |          ^
+  24 | import { useSolitaire } from '../hooks/useSolitaire';
+  25 | import { cardWidth, cardHeight } from '../constants/layout';
+  26 | import { Difficulty } from '../types';
+ ERROR  SyntaxError: /Users/tanveerpatel/development/Myreactgame/MyApp/src/screens/KlondikeGame.tsx: Identifier 'DraggableStack' has already been declared. (23:9)
+
+  21 | import { ScoreDashboard } from '../components/ui/ScoreDashboard';
+  22 | import { TopHeader } from '../components/ui/TopHeader';
+> 23 | import { DraggableStack, DraggableTail } from '../components/DraggableStack';
+     |          ^
+  24 | import { useSolitaire } from '../hooks/useSolitaire';
+  25 | import { cardWidth, cardHeight } from '../constants/layout';
+  26 | import { Difficulty } from '../types';
+ ERROR  SyntaxError: /Users/tanveerpatel/development/Myreactgame/MyApp/src/screens/KlondikeGame.tsx: Identifier 'DraggableStack' has already been declared. (23:9)
+
+  21 | import { ScoreDashboard } from '../components/ui/ScoreDashboard';
+  22 | import { TopHeader } from '../components/ui/TopHeader';
+> 23 | import { DraggableStack, DraggableTail } from '../components/DraggableStack';
+     |          ^
+  24 | import { useSolitaire } from '../hooks/useSolitaire';
+  25 | import { cardWidth, cardHeight } from '../constants/layout';
+  26 | import { Difficulty } from '../types';
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ ERROR  SyntaxError: /Users/tanveerpatel/development/Myreactgame/MyApp/src/screens/KlondikeGame.tsx: Identifier 'DraggableStack' has already been declared. (23:9)
+
+  21 | import { ScoreDashboard } from '../components/ui/ScoreDashboard';
+  22 | import { TopHeader } from '../components/ui/TopHeader';
+> 23 | import { DraggableStack, DraggableTail } from '../components/DraggableStack';
+     |          ^
+  24 | import { useSolitaire } from '../hooks/useSolitaire';
+  25 | import { cardWidth, cardHeight } from '../constants/layout';
+  26 | import { Difficulty } from '../types';
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ ERROR  SyntaxError: /Users/tanveerpatel/development/Myreactgame/MyApp/src/screens/KlondikeGame.tsx: Identifier 'DraggableStack' has already been declared. (23:9)
+
+  21 | import { ScoreDashboard } from '../components/ui/ScoreDashboard';
+  22 | import { TopHeader } from '../components/ui/TopHeader';
+> 23 | import { DraggableStack, DraggableTail } from '../components/DraggableStack';
+     |          ^
+  24 | import { useSolitaire } from '../hooks/useSolitaire';
+  25 | import { cardWidth, cardHeight } from '../constants/layout';
+  26 | import { Difficulty } from '../types';
+ BUNDLE  ./index.js 
+ ERROR  SyntaxError: /Users/tanveerpatel/development/Myreactgame/MyApp/src/screens/KlondikeGame.tsx: Identifier 'DraggableStack' has already been declared. (23:9)
+
+  21 | import { ScoreDashboard } from '../components/ui/ScoreDashboard';
+  22 | import { TopHeader } from '../components/ui/TopHeader';
+> 23 | import { DraggableStack, DraggableTail } from '../components/DraggableStack';
+     |          ^
+  24 | import { useSolitaire } from '../hooks/useSolitaire';
+  25 | import { cardWidth, cardHeight } from '../constants/layout';
+  26 | import { Difficulty } from '../types';
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ ERROR  SyntaxError: /Users/tanveerpatel/development/Myreactgame/MyApp/src/screens/MultiplayerGame.tsx: Unexpected token, expected "," (84:2)
+
+  82 |     // eslint-disable-next-line react-hooks/exhaustive-deps
+  83 |   } // eslint-disable-next-line react-hooks/exhaustive-deps
+> 84 |   }, [score, foundations, onGoBack, opponentName]);
+     |   ^
+  85 |
+  86 |   useEffect(() => {
+  87 |     const handleOpponentScore = (data: any) => {
+ ERROR  SyntaxError: /Users/tanveerpatel/development/Myreactgame/MyApp/src/screens/MultiplayerGame.tsx: Unexpected token, expected "," (84:2)
+
+  82 |     // eslint-disable-next-line react-hooks/exhaustive-deps
+  83 |   } // eslint-disable-next-line react-hooks/exhaustive-deps
+> 84 |   }, [score, foundations, onGoBack, opponentName]);
+     |   ^
+  85 |
+  86 |   useEffect(() => {
+  87 |     const handleOpponentScore = (data: any) => {
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ ERROR  Connection terminated with Device for app='com.myapp' on device='RMX3998 - 16 - API 36' with idle='true' after not responding for 60 seconds.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js ░░░░░░░░░░░░░░░░ 0.0% (0/1)
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ BUNDLE  ./index.js 
+ BUNDLE  ./index.js 
+ INFO  Connection established to app='com.myapp' on device='RMX1921 - 11 - API 30'.
+ INFO  Connection established to app='com.myapp' on device='RMX3998 - 16 - API 36'.
+ INFO  Connection closed to device='RMX1921 - 11 - API 30' for app='com.myapp' with code='1006' and reason=''.
+ INFO  Connection closed to device='RMX3998 - 16 - API 36' for app='com.myapp' with code='1006' and reason=''.
+[metro-file-map] Warning: Lost connection to Watchman, reconnecting..
+2026-06-11T14:53:10,368: [cli] launchctl: exited with status 124
+
+2026-06-11T14:53:10,368: [cli] Falling back to daemonize
+2026-06-11T14:53:10,368: [cli] Watchman is running at a lower than normal priority. (nice_value=5, min_acceptable_nice_value=0). Since that results in poor performance that is otherwise very difficult to trace, diagnose and debug, Watchman is refusing to start.
+
+Fatal error detected at:
+
+0   libfolly.0.58.0-dev.dylib           0x0000000103832224 _ZN5folly10symbolizer17getStackTraceSafeEPmm + 12
+
+1   libfolly.0.58.0-dev.dylib           0x00000001038333e8 _ZN5folly10symbolizer21SafeStackTracePrinter15printStackTraceEb + 80
+
+2   watchman                            0x0000000100faf394 _ZL15log_stack_tracev + 60
+
+3   watchman                            0x0000000100faf2d8 _ZN8watchman3Log13doLogToStdErrEv + 532
+
+4   watchman                            0x0000000100fad7d8 _ZN8watchman9Publisher7enqueueEO8json_ref + 668
+
+5   watchman                            0x0000000100f2ef64 _ZN8watchman3Log4logfIJRiRxEEEvNS_8LogLevelEN3fmt3v1217basic_string_viewIcEEDpOT_ + 412
+
+6   watchman                            0x0000000100f29688 _Z27detect_low_process_priorityv + 112
+7   watchman                            0x0000000100f2caa0 _ZL21run_service_as_daemonv + 28
+
+8   watchman                            0x0000000100f2ab7c main + 4276
+
+9   dyld                                0x00000001954b9d54 start + 7184
+(safe mode, symbolizer not available)
+
+Watchman:  watchman --no-pretty get-sockname returned with exit code=1, signal=null, stderr= 2026-06-11T14:53:10,368: [cli] launchctl: exited with status 124
+2026-06-11T14:53:10,368: [cli] Falling back to daemonize
+2026-06-11T14:53:10,368: [cli] Watchman is running at a lower than normal priority. (nice_value=5, min_acceptable_nice_value=0). Since that results in poor performance that is otherwise very difficult to trace, diagnose and debug, Watchman is refusing to start.
+Fatal error detected at:
+0   libfolly.0.58.0-dev.dylib           0x0000000103832224 _ZN5folly10symbolizer17getStackTraceSafeEPmm + 12
+1   libfolly.0.58.0-dev.dylib           0x00000001038333e8 _ZN5folly10symbolizer21SafeStackTracePrinter15printStackTraceEb + 80
+2   watchman                            0x0000000100faf394 _ZL15log_stack_tracev + 60
+3   watchman                            0x0000000100faf2d8 _ZN8watchman3Log13doLogToStdErrEv + 532
+4   watchman                            0x0000000100fad7d8 _ZN8watchman9Publisher7enqueueEO8json_ref + 668
+5   watchman                            0x0000000100f2ef64 _ZN8watchman3Log4logfIJRiRxEEEvNS_8LogLevelEN3fmt3v1217basic_string_viewIcEEDpOT_ + 412
+6   watchman                            0x0000000100f29688 _Z27detect_low_process_priorityv + 112
+7   watchman                            0x0000000100f2caa0 _ZL21run_service_as_daemonv + 28
+8   watchman                            0x0000000100f2ab7c main + 4276
+9   dyld                                0x00000001954b9d54 start + 7184
+(safe mode, symbolizer not available)
+
+node:events:486
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: watchman --no-pretty get-sockname returned with exit code=1, signal=null, stderr= 2026-06-11T14:53:10,368: [cli] launchctl: exited with status 124
+2026-06-11T14:53:10,368: [cli] Falling back to daemonize
+2026-06-11T14:53:10,368: [cli] Watchman is running at a lower than normal priority. (nice_value=5, min_acceptable_nice_value=0). Since that results in poor performance that is otherwise very difficult to trace, diagnose and debug, Watchman is refusing to start.
+Fatal error detected at:
+0   libfolly.0.58.0-dev.dylib           0x0000000103832224 _ZN5folly10symbolizer17getStackTraceSafeEPmm + 12
+1   libfolly.0.58.0-dev.dylib           0x00000001038333e8 _ZN5folly10symbolizer21SafeStackTracePrinter15printStackTraceEb + 80
+2   watchman                            0x0000000100faf394 _ZL15log_stack_tracev + 60
+3   watchman                            0x0000000100faf2d8 _ZN8watchman3Log13doLogToStdErrEv + 532
+4   watchman                            0x0000000100fad7d8 _ZN8watchman9Publisher7enqueueEO8json_ref + 668
+5   watchman                            0x0000000100f2ef64 _ZN8watchman3Log4logfIJRiRxEEEvNS_8LogLevelEN3fmt3v1217basic_string_viewIcEEDpOT_ + 412
+6   watchman                            0x0000000100f29688 _Z27detect_low_process_priorityv + 112
+7   watchman                            0x0000000100f2caa0 _ZL21run_service_as_daemonv + 28
+8   watchman                            0x0000000100f2ab7c main + 4276
+9   dyld                                0x00000001954b9d54 start + 7184
+(safe mode, symbolizer not available)
+
+    at ChildProcess.<anonymous> (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/fb-watchman/index.js:203:18)
+    at ChildProcess.emit (node:events:508:20)
+    at maybeClose (node:internal/child_process:1108:16)
+    at Socket.<anonymous> (node:internal/child_process:480:11)
+    at Socket.emit (node:events:508:20)
+    at Pipe.<anonymous> (node:net:350:12)
+Emitted 'error' event at:
+    at WatchmanWatcher.emitError (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro-file-map/src/watchers/AbstractWatcher.js:70:19)
+    at Client.<anonymous> (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/metro-file-map/src/watchers/WatchmanWatcher.js:70:12)
+    at Client.emit (node:events:508:20)
+    at spawnError (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/fb-watchman/index.js:174:10)
+    at ChildProcess.<anonymous> (/Users/tanveerpatel/development/Myreactgame/MyApp/node_modules/fb-watchman/index.js:203:7)
+    at ChildProcess.emit (node:events:508:20)
+    at maybeClose (node:internal/child_process:1108:16)
+    at Socket.<anonymous> (node:internal/child_process:480:11)
+    at Socket.emit (node:events:508:20)
+    at Pipe.<anonymous> (node:net:350:12)
+
+Node.js v25.8.1
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.

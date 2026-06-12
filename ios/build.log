@@ -1,0 +1,3 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -workspace MyApp.xcworkspace -configuration Debug -scheme MyApp -destination "platform=iOS Simulator,name=iPhone 16 Pro"
+

@@ -14,6 +14,7 @@ import { ScoreDashboard } from '../components/ui/ScoreDashboard';
 import { GameLayout } from '../components/game/GameLayout';
 import { GameSettingsModal } from '../components/game/GameSettingsModal';
 import { RuleSection } from '../components/game/RuleSection';
+import { KlondikeRulesModal } from '../components/game/KlondikeRulesModal';
 import { cardWidth, cardHeight } from '../constants/layout';
 import { Difficulty } from '../types';
 
@@ -82,20 +83,7 @@ export const KlondikeGame: React.FC<{ onGoBack: () => void }> = ({ onGoBack }) =
         showSound showVibration showCardStyle
       />
 
-      <PremiumModal visible={showRulesModal} title="How to Play Klondike" icon="info-circle" onClose={() => setShowRulesModal(false)} animationType="slide">
-        <ScrollView style={{ width: '100%' }} showsVerticalScrollIndicator={false}>
-          <RuleSection icon={<Icon name="bullseye" size={18} color="#FBBF24" />} title="Goal">
-            <Text style={styles.ruleText}>Move all cards to the 4 Foundation piles (top right) in ascending order from Ace to King by suit.</Text>
-          </RuleSection>
-          <RuleSection icon={<Icon name="layer-group" size={18} color="#FBBF24" />} title="The Tableau (Board)">
-            <Text style={styles.ruleText}>Build stacks downwards by alternating colors. For example, a Red 7 can only be placed on a Black 8.</Text>
-          </RuleSection>
-          <RuleSection icon={<Icon name="clone" size={18} color="#FBBF24" />} title="The Stock (Deck)">
-            <Text style={styles.ruleText}>Tap the deck in the top left to draw more cards when you run out of moves.</Text>
-          </RuleSection>
-        </ScrollView>
-        <PremiumButton title="Got it!" onPress={() => setShowRulesModal(false)} style={{ marginTop: 16 }} />
-      </PremiumModal>
+      <KlondikeRulesModal visible={showRulesModal} onClose={() => setShowRulesModal(false)} />
 
       <View style={{ marginTop: 8, marginBottom: 12 }}>
         <ScoreDashboard score={score} time={time} moves={moves} mode={difficulty} />

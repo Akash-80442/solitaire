@@ -1,7 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView, StatusBar, Platform } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import Orientation from 'react-native-orientation-locker';
+
+import { KlondikeRulesModal } from '../components/game/KlondikeRulesModal';
+import { ShowdownRulesModal } from '../components/game/ShowdownRulesModal';
+import { SevenEightRulesModal } from '../components/SevenEight/SevenEightRulesModal';
+import { FiveThreeTwoRulesModal } from '../components/SevenEight/FiveThreeTwoRulesModal';
 
 export type GameType = 'klondike' | 'spider' | 'pyramid' | 'multiplayer-lobby' | 'seven-eight-lobby' | 'five-three-two-lobby';
 
@@ -61,6 +66,8 @@ const GAMES = [
 ];
 
 export const HomeScreen: React.FC<HomeScreenProps> = ({ onSelectGame }) => {
+  const [rulesGame, setRulesGame] = useState<GameType | null>(null);
+
   useEffect(() => {
     Orientation.lockToPortrait();
   }, []);
@@ -89,6 +96,16 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ onSelectGame }) => {
               disabled={!game.available}
               activeOpacity={0.8}
             >
+              {game.available && (
+                <TouchableOpacity
+                  style={styles.infoButton}
+                  onPress={() => setRulesGame(game.id)}
+                  hitSlop={{ top: 10, right: 10, bottom: 10, left: 10 }}
+                >
+                  <Icon name="info-circle" size={16} color="rgba(255,255,255,0.4)" />
+                </TouchableOpacity>
+              )}
+
               <View style={[styles.iconContainer, { backgroundColor: `${game.color}20` }]}>
                 <Icon name={game.icon} size={28} color={game.color} solid />
               </View>
@@ -109,6 +126,12 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ onSelectGame }) => {
           ))}
         </View>
       </ScrollView>
+
+      <KlondikeRulesModal visible={rulesGame === 'klondike'} onClose={() => setRulesGame(null)} />
+      <ShowdownRulesModal visible={rulesGame === 'multiplayer-lobby'} onClose={() => setRulesGame(null)} />
+      <SevenEightRulesModal visible={rulesGame === 'seven-eight-lobby'} onClose={() => setRulesGame(null)} />
+      <FiveThreeTwoRulesModal visible={rulesGame === 'five-three-two-lobby'} onClose={() => setRulesGame(null)} />
+
     </View>
   );
 };
@@ -173,6 +196,13 @@ const styles = StyleSheet.create({
     shadowRadius: 8,
     elevation: 6,
     alignItems: 'center',
+  },
+  infoButton: {
+    position: 'absolute',
+    top: 12,
+    right: 12,
+    zIndex: 10,
+    padding: 4,
   },
   iconContainer: {
     width: 64,

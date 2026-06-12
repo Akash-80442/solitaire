@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://server-nu-one-87.vercel.app';
+export const BASE_URL = 'https://trick-royale-server.onrender.com';
 
 class ApiService {
   async createRoom(ip: string): Promise<string> {

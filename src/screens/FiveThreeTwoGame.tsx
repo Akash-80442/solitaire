@@ -13,6 +13,8 @@ import { seStyles as styles } from '../constants/SevenEightStyles';
 import { GameSettingsModal } from '../components/game/GameSettingsModal';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 
+import { FiveThreeTwoRulesModal } from '../components/SevenEight/FiveThreeTwoRulesModal';
+
 interface FiveThreeTwoGameProps {
   onGoBack: () => void;
   seed: string;
@@ -22,6 +24,7 @@ interface FiveThreeTwoGameProps {
 
 export const FiveThreeTwoGame: React.FC<FiveThreeTwoGameProps> = ({ onGoBack, seed, players, myPlayerName }) => {
   const [showSettings, setShowSettings] = useState(false);
+  const [showRules, setShowRules] = useState(false);
   const [cardStyle, setCardStyle] = useState<'modern' | 'classic'>('modern');
 
   const [roundNum, setRoundNum] = useState(1);
@@ -99,7 +102,12 @@ export const FiveThreeTwoGame: React.FC<FiveThreeTwoGameProps> = ({ onGoBack, se
     <GameLayout
       title={`5-3-2  ·  R${roundNum}`}
       onBack={() => { socketManager.disconnect(); onGoBack(); }}
-      rightActions={<IconButton name="cog" onPress={() => setShowSettings(true)} solid />}
+      rightActions={
+        <View style={{ flexDirection: 'row', gap: 12 }}>
+          <IconButton name="info-circle" onPress={() => setShowRules(true)} solid />
+          <IconButton name="cog" onPress={() => setShowSettings(true)} solid />
+        </View>
+      }
       showGlow={true}
     >
       <OpponentsRow
@@ -161,6 +169,8 @@ export const FiveThreeTwoGame: React.FC<FiveThreeTwoGameProps> = ({ onGoBack, se
         onUpdate={(_, val) => setCardStyle(val)}
         showCardStyle
       />
+
+      <FiveThreeTwoRulesModal visible={showRules} onClose={() => setShowRules(false)} />
 
       <FiveThreeTwoModals
         phase={phase}

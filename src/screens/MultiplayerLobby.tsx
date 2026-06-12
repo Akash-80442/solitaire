@@ -131,7 +131,12 @@ export const MultiplayerLobby: React.FC<MultiplayerLobbyProps> = ({ gameName = '
     }
 
     const seed = Math.random().toString(36).substring(7);
+    
+    // Broadcast multiple times to ensure iOS devices catching up from sleep don't miss it
     socketManager.send('GAME_STARTED', { seed, players });
+    setTimeout(() => socketManager.send('GAME_STARTED', { seed, players }), 1000);
+    setTimeout(() => socketManager.send('GAME_STARTED', { seed, players }), 2000);
+
     
     const otherPlayers = players.filter(p => p !== playerName);
     onGameStart(seed, otherPlayers.join(', '), true, players, playerName);

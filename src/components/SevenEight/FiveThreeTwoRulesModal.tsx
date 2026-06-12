@@ -16,9 +16,22 @@ export const FiveThreeTwoRulesModal: React.FC<{ visible: boolean; onClose: () =>
   >
     <ScrollView style={{ width: '100%', maxHeight: 460 }} showsVerticalScrollIndicator={false}>
 
-      <RuleSection number="1" title="Winning a Trick">
+      <RuleSection number="1" title="The Setup & Trump">
         <Text style={styles.ruleBody}>
-          Players take turns playing one card each. You must follow the led suit if you can. The highest card of the led suit wins, unless a trump card is played.
+          5-3-2 is a 3-player game played with 30 cards. The Dealer gives 5 cards to each player. 
+          The player sitting left of the dealer (Trump Chooser) looks at their 5 cards and selects the "Trump Suit". 
+          After the Trump is chosen, the rest of the cards are dealt.
+        </Text>
+        <View style={styles.ruleExample}>
+          <Icon name="hand-holding-heart" size={20} color="#F59E0B" />
+          <Text style={[styles.ruleExampleLabel, { fontSize: 11, color: '#F8FAFC' }]}>CHOOSER SELECTS TRUMP</Text>
+        </View>
+      </RuleSection>
+
+      <RuleSection number="2" title="Winning a Trick">
+        <Text style={styles.ruleBody}>
+          The Trump Chooser plays the very first card. Every player plays one card per "trick" in clockwise order. 
+          You MUST follow the led suit if you have it. The highest card of the led suit wins the trick.
         </Text>
         <View style={styles.ruleExample}>
           <View style={styles.ruleExampleItem}>
@@ -33,9 +46,10 @@ export const FiveThreeTwoRulesModal: React.FC<{ visible: boolean; onClose: () =>
         </View>
       </RuleSection>
 
-      <RuleSection number="2" title="Trump Suit">
+      <RuleSection number="3" title="Using Trump Cards">
         <Text style={styles.ruleBody}>
-          If you don't have the led suit, you can play a trump card. A trump card beats any non-trump card. If multiple trump cards are played, the highest trump wins.
+          If you don't have the led suit, you can play a Trump card! 
+          A trump card beats ANY non-trump card, even an Ace. If multiple players play a Trump, the highest Trump wins.
         </Text>
         <View style={styles.ruleExample}>
           <View style={styles.ruleExampleItem}>
@@ -50,25 +64,38 @@ export const FiveThreeTwoRulesModal: React.FC<{ visible: boolean; onClose: () =>
         </View>
       </RuleSection>
 
-      <RuleSection number="3" title="Card Strength">
+      <RuleSection number="4" title="Card Strength">
         <Text style={styles.ruleBody}>
-          Aces are the highest cards, followed by King, Queen, Jack, 10, 9, 8, and the 7♠ and 7♥ are the lowest cards in the game.
+          Cards rank from Ace (highest) down to 8. The 7♠ and 7♥ are included, but they are the WEAKEST cards in the game.
         </Text>
+        <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ marginTop: 8 }}>
+          <View style={styles.strengthRow}>
+            <Text style={styles.strengthLabel}>STRONGEST</Text>
+            <MiniCard suit="spades" rank={1} />
+            <Icon name="chevron-right" size={12} color="#94A3B8" style={{ marginHorizontal: 2 }} />
+            <MiniCard suit="spades" rank={13} />
+            <Icon name="chevron-right" size={12} color="#94A3B8" style={{ marginHorizontal: 2 }} />
+            <MiniCard suit="spades" rank={8} />
+            <Icon name="chevron-right" size={12} color="#94A3B8" style={{ marginHorizontal: 2 }} />
+            <MiniCard suit="hearts" rank={7} />
+            <Text style={[styles.strengthLabel, { color: '#94A3B8', marginLeft: 6 }]}>WEAKEST</Text>
+          </View>
+        </ScrollView>
       </RuleSection>
 
-      <RuleSection number="4" title="Winning the Round">
+      <RuleSection number="5" title="Winning the Round">
         <Text style={styles.ruleBody}>
-          Every player has a target number of tricks they need to win based on their role:
+          The game has 10 total tricks. To win the round, you must win the target number of tricks based on your role:
         </Text>
         <View style={styles.winGoalRow}>
           <View style={styles.winGoal}>
-            <Text style={styles.winGoalRole}>TRUMP CHOOSER</Text>
+            <Text style={styles.winGoalRole}>CHOOSER</Text>
             <Text style={styles.winGoalNumber}>5</Text>
             <Text style={styles.winGoalUnit}>tricks</Text>
           </View>
           <View style={styles.winGoalDivider} />
           <View style={styles.winGoal}>
-            <Text style={styles.winGoalRole}>THIRD PLAYER</Text>
+            <Text style={styles.winGoalRole}>THIRD P.</Text>
             <Text style={styles.winGoalNumber}>3</Text>
             <Text style={styles.winGoalUnit}>tricks</Text>
           </View>
